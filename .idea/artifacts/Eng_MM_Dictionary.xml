@@ -1,0 +1,30 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="Eng-MM-Dictionary">
+    <output-path>$PROJECT_DIR$/out/artifacts/Eng_MM_Dictionary</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="main.Main" />
+        <option name="description" value="Eng_MM_Dictionary" />
+        <option name="height" value="500" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="icons">
+          <JavaFxApplicationIcons>
+            <option name="linuxIcon" value="$PROJECT_DIR$/src/assets/logo.png" />
+          </JavaFxApplicationIcons>
+        </option>
+        <option name="nativeBundle" value="deb" />
+        <option name="title" value="Eng_MM_Dictionary" />
+        <option name="vendor" value="" />
+        <option name="version" value="1.0" />
+        <option name="width" value="1000" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="Eng_MM_Dictionary.jar">
+        <element id="module-output" name="Eng-MM-Dictionary" />
+      </element>
+      <element id="library" level="project" name="lib" />
+      <element id="library" level="project" name="sqlite-jdbc-3.8.10.1" />
+    </root>
+  </artifact>
+</component>

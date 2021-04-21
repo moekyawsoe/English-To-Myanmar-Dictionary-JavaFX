@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" style="-fx-background-color: #fff5f0;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.Controller">
+   <children>
+      <HBox prefHeight="480.0" prefWidth="1000.0">
+         <children>
+            <VBox prefHeight="480.0" prefWidth="400.0">
+               <children>
+                  <TextField fx:id="searchField" prefHeight="30.0" prefWidth="400.0">
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="18.0" />
+                     </font></TextField>
+                  <ListView fx:id="worldList" fixedCellSize="-3.0" prefHeight="450.0" prefWidth="400.0" style="-fx-font-size: 14;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></ListView>
+               </children>
+            </VBox>
+            <Label fx:id="lblDef" alignment="TOP_LEFT" prefHeight="480.0" prefWidth="600.0" style="-fx-border-radius: 5; -fx-border-color: #000000;" text="မြန်မာစာ ယူနီကုဒ် အဆင်မပြေမှုများရှိခဲ့သည်။ ျမန္မာစာ အဆင္မေျပမႈမ်ားသည္။" textFill="#00a1ff" wrapText="true">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </HBox.margin>
+               <effect>
+                  <InnerShadow />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="OPEN_HAND" />
+               </cursor></Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="20.0" prefWidth="1000.0" style="-fx-background-color: #334433;">
+         <children>
+            <Label fx:id="lblCount" alignment="BASELINE_LEFT" prefHeight="20.0" prefWidth="200.0" text="Total Word : " textFill="WHITE">
+               <font>
+                  <Font name="Myanmar Text" size="12.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+            <Hyperlink fx:id="showMe" alignment="CENTER" ellipsisString="" maxHeight="-Infinity" prefHeight="40.0" prefWidth="600.0" text="Developed by Moe Kyaw Soe (Ray Hub Academy)" textFill="#f2f2f2" underline="true" />
+            <Hyperlink fx:id="Update" alignment="BASELINE_RIGHT" ellipsisString="" layoutX="210.0" layoutY="10.0" maxHeight="-Infinity" prefHeight="40.0" prefWidth="200.0" text="Check for Update" textFill="#eb7171" underline="true">
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Hyperlink>
+         </children>
+      </HBox>
+   </children>
+</VBox>
